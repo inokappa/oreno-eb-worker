@@ -1,0 +1,23 @@
+{
+  "AWSEBDockerrunVersion": "1",
+  "Authentication": {
+    "Bucket": "your-bucket",
+    "Key": "your-key"
+  },
+  "Image": {
+    "Name": "xxxxxxxxxxxxxxxxxxxxxxxxxxx.dkr.ecr.us-east-1.amazonaws.com/oreno-sinatra-worker:latest",
+    "Update": "true"
+  },
+  "Ports": [
+    {
+      "ContainerPort": "4567"
+    }
+  ],
+  "Volumes": [
+    {
+      "HostDirectory": "/tmp",
+      "ContainerDirectory": "/tmp"
+    }
+  ],
+  "Logging": "/var/log/nginx"
+}

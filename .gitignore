@@ -1,0 +1,8 @@
+vendor/*
+.bundle
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml
+.ebextensions/0-options.config
+Dockerrun.aws.json
